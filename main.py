@@ -93,5 +93,8 @@ yogini1.instructions()
 print("=====================")
 
 #====================================================
-# object for SeatedForward bend class
+# object for SeatedForward bend class the class demontrating Multiple inheritance!!
 #====================================================
+yogini1 = SeatedForwardBend("dandasana",10,True,4)
+yogini1.instructions()
+yogini1.weekly_counter(7)
