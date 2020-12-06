@@ -4,7 +4,7 @@ class Yoga:
     yama_most_important_requirement = "non-violence"
     niyama_requirement = "cleanliness"
     practice_space = "indoors"
-   
+   #all attributes and methods are public as the Yoga class members can be accessed from anywhere in the program
     def __init__(self, breath_free, practice_days_per_week=7):
         """attributes that are different depending on the person practicing"""
        
@@ -47,10 +47,10 @@ class Yoga:
 
 
 
-yogini1 = Yoga(True,5)
-yogini1.practice(4)
-yogini1.change_practice_space("on a warm rock")
-print(f'I like to practice {yogini1.practice_space} in the mornings!')
-print(Yoga.should_i_do_this_pose(True)) #static Method
-yogini1.change_niyama_requirement("contentment")
-print(f'There are 5 major aspects to a yogi\'s practice. Each week pick one. This week well practice with {yogini1.niyama_requirement} in mind.')
+# yogini1 = Yoga(True,5)
+# yogini1.practice(4)
+# yogini1.change_practice_space("on a warm rock")
+# print(f'I like to practice {yogini1.practice_space} in the mornings!')
+# print(Yoga.should_i_do_this_pose(True)) #static Method
+# yogini1.change_niyama_requirement("contentment")
+# print(f'There are 5 major aspects to a yogi\'s practice. Each week pick one. This week well practice with {yogini1.niyama_requirement} in mind.')

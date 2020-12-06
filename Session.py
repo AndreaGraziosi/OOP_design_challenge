@@ -6,7 +6,7 @@ from ForwardBend import ForwardBend
 class Session:
     on_class_start = "sit quietly"
     dress_code = "remove shoes"
-
+    #all attributes and methods in this function are public so they can be acccessed anywhere in the program
     def __init__(self, duration, theme):
         self.duration = duration
         self.theme = theme
@@ -23,7 +23,7 @@ class Session:
 
 
     def display_sequence(self):
-        """adding names of poses to the sequence list """
+        """adding names of poses to the sequence list This function prints them out """
         for s in self.sequence:
             print(s.name)
 
@@ -40,18 +40,18 @@ class Session:
         print(cls.dress_code)
 
 
-yogini1= Session(30, "Restorative Practice")
-print(yogini1.theme)
-print("======================")
-# yogini1.add_backbend("upward dog", True, 7)
-# yogini1.add_backbend("Downward Dog", True, 7)
-# yogini1.add_backbend("Hanumanasana", True, 7)
-# yogini1.add_backbend("Padangusthasana", True, 7)
-# yogini1.add_backbend("Pincha Mayurasana", True, 7)
-print("======================")
-yogini1.add_forwardBend( 30,True, 6, "Utanasana", "padagusthasana", "Downward Dog", "maricyasana")
-yogini1.add_backbend(True, 7, "pose1", "pose2", "pose3")
-yogini1.display_sequence()
-print(yogini1.change_on_class_start("ommm,ommmm,ommmm"))
-print(yogini1.change_dress_code("Before practice, remove your socks!"))
+#yogini1= Session(30, "Restorative Practice")#===================================>
+# print(yogini1.theme)
+# print("======================")
+# # yogini1.add_backbend("upward dog", True, 7)
+# # yogini1.add_backbend("Downward Dog", True, 7)
+# # yogini1.add_backbend("Hanumanasana", True, 7)
+# #yogini1.add_backbend("Padangusthasana", True, 7)
+# # yogini1.add_backbend("Pincha Mayurasana", True, 7)
+# print("======================")
+#3yogini1.add_forwardBend( 30,True, 6, "Utanasana", "padagusthasana", "Downward Dog", "maricyasana")#=========================>
+# yogini1.add_backbend(True, 7, "pose1", "pose2", "pose3")
+#yogini1.display_sequence()#=============================================>
+# print(yogini1.change_on_class_start("ommm,ommmm,ommmm"))
+# print(yogini1.change_dress_code("Before practice, remove your socks!"))
 
