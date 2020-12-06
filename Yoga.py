@@ -1,41 +1,56 @@
 class Yoga:
+    """Basic set of instructions common to all practicioners"""
+    
     yama_most_important_requirement = "non-violence"
     niyama_requirement = "cleanliness"
     practice_space = "indoors"
-    def __init__(self,breath_free, is_flexible, is_strong, practice_days_per_week=7):
+   
+    def __init__(self, breath_free, practice_days_per_week=7):
+        """attributes that are different depending on the person practicing"""
+       
         self.breath_free = breath_free
-        self.is_flexible = is_flexible
-        self.is_strong = is_strong
         self.practice_days_per_week = practice_days_per_week
+      
 
-    def practice(self, practice_days_per_week):
-        if practice_days_per_week < 7:
+    def practice(self,days_per_week):
+        """prints out statement depending on how many days per week a practicioner practices"""
+        self.practice_days_per_week == days_per_week
+        if self.practice_days_per_week < 7:
             print("Practice a little every Day!")
         else:
             print("Observe the movement of thought, without analysing")
 
     @classmethod
-    def change_practice_location(cls, new_practice_space):
+    def change_practice_space(cls, new_practice_space):
+        """this classmethod will update the location of the practice"""
         cls.practice_space = new_practice_space
 
+    
     @staticmethod
-    def should_i_do_this_pose(self, breath_free): 
+    def should_i_do_this_pose(breath_free): 
+        """This function prints out general guidelines for practicing yoga"""
+        
         if breath_free == True:
-           print("Enjoy the pose, hold a little longer")
+            return "Enjoy the pose, hold a little longer" 
         else:
-            print("Dont hold your breath, come out and let's use some props!")
+            return "Dont hold your breath, come out and let's use some props!"
+
+    @classmethod
+    def change_niyama_requirement(cls, new_niyama):
+        """this classmethod will update the requirement for this practice"""
+        cls.niyama_requirement = new_niyama
+
+    
+    
 
 
 
 
 
-
-
-
-
-
-andrea = Yoga(True,True,True,5)
-andrea.practice(7)
-andrea.change_practice_location("on a warm rock")
-print(f'I like to practice {andrea.practice_space} in the moornings!')
-print(Yoga.should_i_do_this_pose(True))
+yogini1 = Yoga(True,5)
+yogini1.practice(4)
+yogini1.change_practice_space("on a warm rock")
+print(f'I like to practice {yogini1.practice_space} in the mornings!')
+print(Yoga.should_i_do_this_pose(True)) #static Method
+yogini1.change_niyama_requirement("contentment")
+print(f'There are 5 major aspects to a yogi\'s practice. Each week pick one. This week well practice with {yogini1.niyama_requirement} in mind.')
