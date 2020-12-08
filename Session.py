@@ -40,18 +40,18 @@ class Session:
         print(cls.dress_code)
 
 
-#yogini1= Session(30, "Restorative Practice")#===================================>
+yogini1= Session(30, "Restorative Practice")#===================================>
 # print(yogini1.theme)
 # print("======================")
-# # yogini1.add_backbend("upward dog", True, 7)
-# # yogini1.add_backbend("Downward Dog", True, 7)
-# # yogini1.add_backbend("Hanumanasana", True, 7)
-# #yogini1.add_backbend("Padangusthasana", True, 7)
+# yogini1.add_backbend("upward dog", True, 7)
+# yogini1.add_backbend("Downward Dog", True, 7)
+# yogini1.add_backbend("Hanumanasana", True, 7)
+# yogini1.add_backbend("Padangusthasana", True, 7)
 # # yogini1.add_backbend("Pincha Mayurasana", True, 7)
 # print("======================")
-#3yogini1.add_forwardBend( 30,True, 6, "Utanasana", "padagusthasana", "Downward Dog", "maricyasana")#=========================>
+yogini1.add_forwardBend( 30,True, 6, "Utanasana", "padagusthasana", "Downward Dog", "maricyasana")#=========================>
 # yogini1.add_backbend(True, 7, "pose1", "pose2", "pose3")
-#yogini1.display_sequence()#=============================================>
+yogini1.display_sequence()#=============================================>
 # print(yogini1.change_on_class_start("ommm,ommmm,ommmm"))
 # print(yogini1.change_dress_code("Before practice, remove your socks!"))
 

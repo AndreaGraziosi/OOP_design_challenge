@@ -16,7 +16,7 @@ class Backbend(Yoga):
         '''this function will add backbend names to a list '''
         for b in fav_backbend:
             self.backbends.append(b)
-
+    @staticmethod
     def should_i_do_this_pose(breath_free): 
         """This function is overriding the super class function, it will print a conditional message about doing a backbend"""
         
@@ -42,11 +42,11 @@ class Backbend(Yoga):
 
 
 
-# yogini1= Backbend("Urdhva Danurasana", True, 3)#instantiating the object
+#yogini1= Backbend("Urdhva Danurasana", True, 3)#instantiating the object
 # yogini1.favorite_backbends("Camel", "Urdhva Danurasana", "backbend on a chair")#calling instance method adding backbend names to a list
 # print(f'If you are not sure which backbend to work on today... Here is a list of options:{yogini1.backbends}')
 print("================")
-#print(Backbend.should_i_do_this_pose(True)) ##SttcMthd I just call the class and not my object
+print(Backbend.should_i_do_this_pose(True)) ##SttcMthd I just call the class and not my object
 print("================")
 # yogini1.change_feet_position("turn feet in, heels out toes in")
 # print (f"Save your back {yogini1.feet_position} when you practice back bends!")

@@ -2,7 +2,7 @@ from ForwardBend import ForwardBend
 from SeatedPose import SeatedPose
 
 class SeatedForwardBend(ForwardBend, SeatedPose):
-    """multiple inheritace from ForwardBend class and the seatedPose class to create a seatedforwardbend cass"""
+    """multiple inheritace from ForwardBend class and the seatedPose class to create a seatedforwardbend class"""
     def __init__(self,name, time_in_pose, breath_free, practice_days_per_week=7):
         ForwardBend.__init__(self, name, time_in_pose, breath_free, practice_days_per_week=7)
         SeatedPose.__init__(self, name)

@@ -21,7 +21,7 @@ class ForwardBend(Yoga):
         else:
             print("Slowly come out of the pose relax and repeat 10x dont stay long in the pose")
   
-
+    @staticmethod
     def should_i_do_this_pose(breath_free): 
         """This function is overriding the super class function, it will print a conditional message about doing a backbend"""
         
